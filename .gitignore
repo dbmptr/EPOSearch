@@ -123,3 +123,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# data files
+*.pkl
+*.pickle
+*.arff
+*.xml
+
+# local files
+misc/
+
+# outputs
+*.pdf
