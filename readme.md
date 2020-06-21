@@ -2,10 +2,7 @@
 
 This repository contains code for all the experiments in the ICML 2020 paper
 
-[paper name](link)
+[Multi-Task Learning with User Preferences: Gradient Descent with Controlled Ascent in Pareto Optimization](link)
 
-## Citation:
-If you find this work useful, please cite the following paper
-```
-citation goes here.
-```
+
+If you find this work useful, please cite our paper.
