@@ -115,6 +115,7 @@ if __name__ == '__main__':
     ax.plot(theta, l1, label=r'$l_1(\theta)$', lw=2)
     ax.plot(theta, l2, label=r'$l_2(\theta)$', lw=2)
 
+    # Comment out the twin axis code below for ppt
     axt = ax.twinx()
     axt.axis("off")
     add_interval(axt, (-3, -1.05), (0.02, 0.02), "r", "()",
@@ -124,12 +125,13 @@ if __name__ == '__main__':
     add_interval(axt, (-.95, .95), (0.02, 0.02), "g", "()",
                  r"$-\mathbf{1}/\sqrt{n} \preccurlyeq \theta^0" +
                  r"\preccurlyeq \mathbf{1}/\sqrt{n}$", side="both")
-
     axt.legend(loc=(0.09, 0.2))
+
     labelLines(ax.get_lines(), xvals=[2, -2], align=False)
     ax.set_xlabel(r'$\theta$')
     ax.xaxis.set_label_coords(0.99, -0.03)
 
-    plt.savefig('figures/moo_synthetic.pdf')
+    plt.savefig('../figures/moo_synthetic.pdf')   # for paper
+    # plt.savefig('../figures/moo_synthetic_ppt_just_losses.pdf')     # for ppt
     plt.show()
 

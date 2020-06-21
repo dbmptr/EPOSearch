@@ -26,6 +26,12 @@ def epo_search(multi_obj_fg, r, x=None, relax=False, eps=1e-4, max_iters=100,
             desc += 1
         else:
             asce += 1
+        ls.append(l)
+        lambdas.append(np.min(r * l))
+        mus.append(lp.mu_rl)
+        adjs.append(lp.a.value)
+        gammas.append(lp.gamma)
+
         d_nd = alpha @ G
         if np.linalg.norm(d_nd, ord=np.inf) < grad_tol:
             print('converged, ', end=',')
@@ -33,11 +39,6 @@ def epo_search(multi_obj_fg, r, x=None, relax=False, eps=1e-4, max_iters=100,
         x = x - 10. * max(lp.mu_rl, 0.1) * step_size * d_nd
         if store_xs:
             xs.append(x)
-        ls.append(l)
-        lambdas.append(np.min(r * l))
-        mus.append(lp.mu_rl)
-        adjs.append(lp.a.value)
-        gammas.append(lp.gamma)
 
     print(f'# iterations={asce+desc}; {100. * desc/(desc+asce)} % descent')
     res = {'ls': np.stack(ls),
