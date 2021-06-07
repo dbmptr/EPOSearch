@@ -13,11 +13,18 @@ You can get an intuitive understanding of the algorithm from [this video](https:
 If you find this work useful, please cite our paper.
 
 ```
-@incollection{icml2020_3635,
- author = {Mahapatra, Debabrata and Rajan, Vaibhav},
- booktitle = {Proceedings of Machine Learning and Systems 2020},
- pages = {6555--6565},
- title = {Multi-Task Learning with User Preferences: Gradient Descent with Controlled Ascent in Pareto Optimization},
- year = {2020}
+@InProceedings{pmlr-v119-mahapatra20a,
+  title = 	 {Multi-Task Learning with User Preferences: Gradient Descent with Controlled Ascent in Pareto Optimization},
+  author =       {Mahapatra, Debabrata and Rajan, Vaibhav},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {6597--6607},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/mahapatra20a/mahapatra20a.pdf},
+  url = 	 {http://proceedings.mlr.press/v119/mahapatra20a.html},
 }
 ```
